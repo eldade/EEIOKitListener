@@ -62,6 +62,11 @@ void ARMPMUStateChanged( void *listenerInstance, io_service_t service, uint32_t 
     [((__bridge EEIOKitListener *) listenerInstance) chargerObjectRefreshed];
 }
 
+- (void) requestDataRefresh
+{
+    [self chargerObjectRefreshed];
+}
+
 - (void) startListener
 {
     if (listenerActive == NO)
@@ -79,7 +84,7 @@ void ARMPMUStateChanged( void *listenerInstance, io_service_t service, uint32_t 
                                                ARMPMUStateChanged,
                                                (__bridge void *) self,
                                                &notificationObject);
-        listenerActive = YES;
+        listenerActive = YES;        
     }
 }
 

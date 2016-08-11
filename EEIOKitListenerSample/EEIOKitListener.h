@@ -36,6 +36,7 @@
 + (instancetype) sharedEEIOKitListener;
 
 - (void) startListener;
+- (void) requestDataRefresh;
 - (void) stopListener;
 
 @end

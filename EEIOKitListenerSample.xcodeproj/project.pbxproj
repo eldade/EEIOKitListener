@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5160933F1D5C5256007ADC57 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5160933E1D5C5256007ADC57 /* IOKit.framework */; };
 		518F50A11D5C4C1D00BFD0B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F50A01D5C4C1D00BFD0B1 /* main.m */; };
 		518F50A41D5C4C1D00BFD0B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F50A31D5C4C1D00BFD0B1 /* AppDelegate.m */; };
 		518F50A71D5C4C1D00BFD0B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F50A61D5C4C1D00BFD0B1 /* ViewController.m */; };
 		518F50AA1D5C4C1D00BFD0B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518F50A81D5C4C1D00BFD0B1 /* Main.storyboard */; };
 		518F50AC1D5C4C1D00BFD0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518F50AB1D5C4C1D00BFD0B1 /* Assets.xcassets */; };
 		518F50AF1D5C4C1D00BFD0B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518F50AD1D5C4C1D00BFD0B1 /* LaunchScreen.storyboard */; };
+		518F50B81D5C4C3C00BFD0B1 /* EEIOKitListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F50B61D5C4C3C00BFD0B1 /* EEIOKitListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5160933E1D5C5256007ADC57 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = EEIOKitListenerSample/IOKit.framework; sourceTree = "<group>"; };
 		518F509C1D5C4C1D00BFD0B1 /* EEIOKitListenerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEIOKitListenerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518F50A01D5C4C1D00BFD0B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		518F50A21D5C4C1D00BFD0B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		518F50AB1D5C4C1D00BFD0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518F50AE1D5C4C1D00BFD0B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518F50B01D5C4C1D00BFD0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518F50B61D5C4C3C00BFD0B1 /* EEIOKitListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EEIOKitListener.m; path = EEIOKitListenerSample/EEIOKitListener.m; sourceTree = "<group>"; };
+		518F50B71D5C4C3C00BFD0B1 /* EEIOKitListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EEIOKitListener.h; path = EEIOKitListenerSample/EEIOKitListener.h; sourceTree = "<group>"; };
+		518F50B91D5C4C7800BFD0B1 /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOKit.h; path = EEIOKitListenerSample/IOKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,15 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5160933F1D5C5256007ADC57 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		516093401D5C5AA3007ADC57 /* EEIOKitListener */ = {
+			isa = PBXGroup;
+			children = (
+				5160933E1D5C5256007ADC57 /* IOKit.framework */,
+				518F50B91D5C4C7800BFD0B1 /* IOKit.h */,
+				518F50B61D5C4C3C00BFD0B1 /* EEIOKitListener.m */,
+				518F50B71D5C4C3C00BFD0B1 /* EEIOKitListener.h */,
+			);
+			name = EEIOKitListener;
+			sourceTree = "<group>";
+		};
 		518F50931D5C4C1D00BFD0B1 = {
 			isa = PBXGroup;
 			children = (
+				516093401D5C5AA3007ADC57 /* EEIOKitListener */,
 				518F509E1D5C4C1D00BFD0B1 /* EEIOKitListenerSample */,
 				518F509D1D5C4C1D00BFD0B1 /* Products */,
 			);
@@ -110,6 +129,7 @@
 				TargetAttributes = {
 					518F509B1D5C4C1D00BFD0B1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = E54FNFV6AU;
 					};
 				};
 			};
@@ -149,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518F50B81D5C4C3C00BFD0B1 /* EEIOKitListener.m in Sources */,
 				518F50A71D5C4C1D00BFD0B1 /* ViewController.m in Sources */,
 				518F50A41D5C4C1D00BFD0B1 /* AppDelegate.m in Sources */,
 				518F50A11D5C4C1D00BFD0B1 /* main.m in Sources */,
@@ -265,10 +286,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eldad Eilam (R38P9ADBHR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EEIOKitListenerSample",
+				);
 				INFOPLIST_FILE = EEIOKitListenerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EEIOKitListenerSample/IOKit.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.EEIOKitListenerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f92359f6-330d-461b-84d1-4b537573bd14";
 			};
 			name = Debug;
 		};
@@ -276,10 +307,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eldad Eilam (R38P9ADBHR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EEIOKitListenerSample",
+				);
 				INFOPLIST_FILE = EEIOKitListenerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EEIOKitListenerSample/IOKit.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eldade.EEIOKitListenerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f92359f6-330d-461b-84d1-4b537573bd14";
 			};
 			name = Release;
 		};
@@ -302,6 +343,7 @@
 				518F50B51D5C4C1D00BFD0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
